@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +9,190 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: #1a1a1a;
+  z-index: 100;
+  border-bottom: 2px solid white;
+}
+.navbar #logo{
+  font-size: 40px;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.navbar ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Lato";
+}
+.navbar #buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbar #buttons button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+.navbar #buttons button:hover{
+  border: 1px solid transparent;
+  background-color: white;
+  color: #1a1a1a;
+}
+
+/* hero */
+#hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#043863, transparent);
+  width: 100vw;
+  height: 100vh;
+}
+#hero h1{
+  font-size: 70px;
+  color: whitesmoke;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+#hero p{
+  font-size: 30px;
+  margin-top: -10px;
+  color: whitesmoke;
+  font-family: "Lato";
+  font-weight: 400;
+}
+#hero #social_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+#hero #social_icons .icon{
+  color: whitesmoke;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+#hero #social_icons .icon:hover{
+  transform: translateY(-5px);
+}
+.primary_btn{
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: white;
+  color: #1a1a1a;
+  font-size: 20px;
+  margin: 10px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.primary_btn:hover{
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background-color: #1a1a1a;
+  gap: 40px;
+}
+#about #left{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#about #left h1{
+  font-size: 40px;
+  color: whitesmoke;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+#about #left p{
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+}
+#about .img{
+  border-radius: 10px;
+}
+
+#tech{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
+  gap: 20px;
+  padding: 40px 80px;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+#tech h2{
+  font-size: 40px;
+  color: white;
+  font-family: "Outfit";
+  background-color: #1a1a1a;
+  border-radius: 100px;
+}
+.icons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#projects{
+  width: 100vw;
+  padding: 30px 60px;
+}
+#projects h2{
+  font-size: 50px;
+  color: whitesmoke;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+#project_area{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+#project_area .card{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#project_area .card Image{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+#project_area .card h2{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Outfit";
+  text-align: center;
+  
 }

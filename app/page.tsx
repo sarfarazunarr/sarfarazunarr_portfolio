@@ -1,101 +1,71 @@
 import Image from "next/image";
+import Link from "next/link";
+import { BiData } from "react-icons/bi";
+import { BsFacebook, BsGithub, BsLinkedin, BsWordpress } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
+import { DiJavascript, DiMongodb, DiPython } from "react-icons/di";
+import { FaNodeJs, FaPhp } from "react-icons/fa";
+import { GrReactjs } from "react-icons/gr";
+import { PiDevToLogo } from "react-icons/pi";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
+import { TbBrandReactNative, TbSql } from "react-icons/tb";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    <section id="hero">
+      <h1>I am <span className="spacial_text">Sarfaraz</span></h1>
+      <p>I am a Web Developer</p>
+      <button className="primary_btn">Hire Me</button>
+      <div id="social_icons">
+        <Link href={"https://github.com/sarfarazunarr"}><BsGithub className="icon" /></Link>
+        <Link href={"https://linkedin.com/in/sarfarazunarr"}><BsLinkedin className="icon" /></Link>
+        <Link href={"https://facebook.com/sarfarazunarr"}><BsFacebook className="icon" /></Link>
+        <Link href={"https://dev.to/sarfarazunarr"}><PiDevToLogo className="icon" /></Link>
+      </div>
+    </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <section id="about">
+        <div id="left">
+            <h1>About Me.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum laboriosam nesciunt ipsa quod sed consequuntur id quo atque qui nobis possimus animi modi deleniti asperiores nam, dolores sunt nisi eum minima architecto eius fugit? Accusantium ea aperiam reprehenderit, cumque officia iusto rerum sed libero qui vel id! Minima, dolorem dignissimos.</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div>
+          <Image src={"/myface.jpg"} width={300} height={300} alt="my face" className="img" />
+        </div>
+    </section>
+
+    <section id="tech">
+      <h2 className="col-span-1">Tech Stack</h2>
+      <div className="icons col-span-4">
+        <RiNextjsFill color="white" className="icon" size={50} />
+        <SiExpress color="white" size={50} />
+        <FaNodeJs color="white" size={50} />
+        <DiJavascript color="white" size={50} />
+        <DiPython color="white" size={50} />
+        <FaPhp color="white" size={50} />
+        <BsWordpress color="white" size={50} />
+        <DiMongodb color="white" size={50} />
+        <TbSql color="white" size={50} />
+        <BiData color="white" size={50} />
+        <CgWebsite color="white" size={50} />
+        <TbBrandReactNative color="white" size={50} />
+        <GrReactjs color="white" size={50} />
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project_area">
+        <div className="card">
+            <Image src="/invoicy2.jpg" width={200} height={200} alt="invoicy2" />
+            <h2>Invoicy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+            <button>Vew Demo</button>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }
