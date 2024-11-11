@@ -137,7 +137,7 @@
   border-radius: 10px;
 }
 
-#tech{
+#tech, #skills{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: auto;
@@ -148,8 +148,8 @@
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
-#tech h2{
-  font-size: 40px;
+#tech h2, #skills h2{
+  font-size: 45px;
   color: white;
   font-family: "Outfit";
   background-color: #1a1a1a;
@@ -161,38 +161,64 @@
   align-items: center;
   gap: 20px;
 }
-#projects{
+#projects, #testimonials{
   width: 100vw;
   padding: 30px 60px;
 }
-#projects h2{
+#projects h2, #testimonials h2{
   font-size: 50px;
   color: whitesmoke;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   text-align: center;
 }
-#project_area{
+#project_area, #testimonials_area{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
-#project_area .card{
-  width: auto;
+.card{
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  background-color: rgb(37, 37, 37);
+  padding: 5px;
+  border: 1px solid rgb(59, 59, 59);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
-#project_area .card Image{
+.card:hover{
+  border: 1px solid white;
+  transform: scale(1.01);
+}
+.card Image{
   width: 100%;
   height: 50%;
   object-fit: cover;
 }
-#project_area .card h2{
+.card h3{
   font-size: 30px;
   font-weight: 600;
   font-family: "Outfit";
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+.card p{
+  font-size: 15px;
+  font-family: "Outfit";
+  text-align: left;
+  padding-left: 10px;
+  color: whitesmoke;
+}
+.card button{
+  padding: 10px 40px;
+  background-color: white;
+  color: black;
   text-align: center;
-  
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin: 10px 5px;
 }

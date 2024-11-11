@@ -54,15 +54,84 @@ export default function Home() {
         <GrReactjs color="white" size={50} />
       </div>
     </section>
+    <section id="skills">
+      <div className="icons col-span-4">
+        <RiNextjsFill color="white" className="icon" size={50} />
+        <SiExpress color="white" size={50} />
+        <FaNodeJs color="white" size={50} />
+        <DiJavascript color="white" size={50} />
+        <DiPython color="white" size={50} />
+        <FaPhp color="white" size={50} />
+        <BsWordpress color="white" size={50} />
+        <DiMongodb color="white" size={50} />
+        <TbSql color="white" size={50} />
+        <BiData color="white" size={50} />
+        <CgWebsite color="white" size={50} />
+        <TbBrandReactNative color="white" size={50} />
+        <GrReactjs color="white" size={50} />
+      </div>
+      <h2 className="col-span-1">Skills</h2>
+    </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div id="project_area">
         <div className="card">
-            <Image src="/invoicy2.jpg" width={200} height={200} alt="invoicy2" />
-            <h2>Invoicy</h2>
+        <Image src="/invoicy2.jpg" width={600} height={800} alt="invoicy2" />
+            <h3>Invoicy</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
             <button>Vew Demo</button>
+        </div>
+        <div className="card">
+            <Image src="/invoicy2.jpg" width={600} height={800} alt="invoicy2" />
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+            <button>Vew Demo</button>
+        </div>
+        <div className="card">
+            <Image src="/invoicy2.jpg" width={600} height={800} alt="invoicy2" />
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+            <button>Vew Demo</button>
+        </div>
+        <div className="card">
+            <Image src="/invoicy2.jpg" width={600} height={800} alt="invoicy2" />
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+            <button>Vew Demo</button>
+        </div>
+        <div className="card">
+            <Image src="/invoicy2.jpg" width={600} height={800} alt="invoicy2" />
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+            <button>Vew Demo</button>
+        </div>
+        <div className="card">
+            <Image src="/invoicy2.jpg" width={600} height={800} alt="invoicy2" />
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+            <button>Vew Demo</button>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div id="testimonials_area">
+        <div className="card">
+            <h3>Nawaz</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+        </div>
+        <div className="card">
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+        </div>
+        <div className="card">
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
+        </div>
+        <div className="card">
+            <h3>Invoicy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda distinctio.</p>
         </div>
       </div>
     </section>
